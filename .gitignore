@@ -17,6 +17,9 @@ psd
 thumb
 sketch
 
+# file .env
+.env
+
 ### ReactNative ###
 # React Native Stack Base
 
