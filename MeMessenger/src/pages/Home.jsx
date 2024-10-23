@@ -1,20 +1,28 @@
-// src/components/Home.jsx
-import React from 'react';
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebase';
+import { Chat } from "../components/chat/Chat"
+import { Sidebar } from "../components/sideBar/Sidebar"
+import { ModalsContextProvider } from "../context/ModalsContext"
+// import "./styles.css"
+const Home = () => {
 
-const Home = ({ setIsLoggedIn }) => {
-  const handleLogout = async () => {
-    await signOut(auth);
-    setIsLoggedIn(false);
-  };
-
+  const changeWindow = () => {
+    if(window.innerWidth>632){
+      document.getElementById("sidebar").classList.remove("close");
+      document.getElementById("sidebar").classList.remove("open");
+      document.getElementById("chat").classList.remove("close");
+      document.getElementById("chat").classList.remove("open");
+    }
+  }
+  window.addEventListener("resize", changeWindow);  
   return (
-    <div>
-      <h1>Welcome to Home</h1>
-      <button onClick={handleLogout}>Log Out</button>
+    <div className='home'>
+      <div className="container-home">
+        <ModalsContextProvider>
+          <Sidebar id="sidebar"/>
+          <Chat id="chat"/>
+        </ModalsContextProvider>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
