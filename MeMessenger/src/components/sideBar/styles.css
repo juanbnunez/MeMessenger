@@ -1,0 +1,66 @@
+.sidebar {
+    width: 300px;
+    background-color: #000505;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .chat-list {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .item-chat {
+    padding: 10px;
+    border-bottom: 1px solid #282B28;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-chat:hover {
+    background-color: #282B28;
+  }
+  
+  .item-chat h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #9984D4;
+  }
+  
+  .item-chat p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #F9F9F9;
+  }
+  
+  .navbar {
+    padding: 20px;
+    background-color: #282B28;
+    color: white;
+    text-align: center;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #0CBABA;
+  }
+  
+  .search {
+    padding: 10px;
+    border-bottom: 1px solid #282B28;
+    
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #282B28;
+    color: #F9F9F9;
+    
+  }
+  

@@ -1,5 +1,5 @@
 // import { Chat } from "../components/chat/Chat"
-// import { Sidebar } from "../components/sideBar/Sidebar"
+import Sidebar from "../components/sideBar/SideBar";
 import { ModalsContextProvider } from "../context/ModalsContext"
 // import "./styles.css"
 const Home = () => {
@@ -17,8 +17,8 @@ const Home = () => {
     <div className='home'>
       <div className="container-home">
         <ModalsContextProvider>
-          {/* <Sidebar id="sidebar"/>
-          <Chat id="chat"/> */}
+           <Sidebar id="sidebar"/>
+          {/*<Chat id="chat"/> */}
         </ModalsContextProvider>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
 
 // Crear el contexto
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 // Proveedor del contexto de autenticación
 export const AuthProvider = ({ children }) => {
