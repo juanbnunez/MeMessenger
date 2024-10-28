@@ -7,7 +7,7 @@ export const AuthContext = createContext();
 
 // Proveedor del contexto de autenticación
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
