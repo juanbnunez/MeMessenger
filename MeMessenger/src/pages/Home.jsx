@@ -1,3 +1,4 @@
+import { Chat } from "../components/chat/Chat"
 import Sidebar from "../components/sideBar/SideBar";
 import { ModalsContextProvider } from "../context/ModalsContext";
 import { ChatContextProvider } from "../context/ChatContext"; // Importa ChatContextProvider
@@ -22,6 +23,7 @@ const Home = () => {
           <ChatContextProvider> {/* Envuelve con ChatContextProvider */}
             <Sidebar id="sidebar"/>
             <ItemChat /> {/* Añade ItemChat aquí */}
+            <Chat id="chat"/>
           </ChatContextProvider>
         </ModalsContextProvider>
       </div>
